@@ -1,22 +1,61 @@
+:root {
+  --yellow: rgb(254, 250,	6);
+  --orange: rgb(251, 137,	14);
+  --burnt: rgb(205,	77,	7	);
+  --red: rgb(254, 4, 0);
+  --pink: rgb(249, 5,	198);
+  --magenta: rgb(237,	0, 253);
+  --purple: rgb(125,	28,	248);
+  --navy: rgb(4,	20,	114	);
+  --medium-blue: rgb(1,	131,	227	);
+  --light-blue: rgb(65,	190,	242	);
+  --teal: rgb(19,	254,253);
+  --dark-blue: rgb(3	36	140	);
+
+}
+
+#div1 {
+  background-color: var(--yellow);
+}
+
+body {
+  font-family: fantasy
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: block;
+  width: 100vw;
+  height: auto;
+  padding: .5vmin;
+  font-size: 8vmin;
+  text-align: center;
+  
 }
 
-.App-link {
-  color: #09d3ac;
+.component {
+  display: block;
+  background-color: black;
+  color: var(--magenta);
+  margin: 1vmin;
+  padding: 3vmin 20vmin 3vmin 20vmin;
+}
+
+.row {
+  display: block;
+  background-color: white;
+  color: var(--magenta);
+  margin: 1vmin;
+  padding: 1vmin;
+}
+
+.peg {
+  display: inline;
+  background-color: white;
+  color: var(--magenta);
+  margin: 1vmin;
+  padding: 1vmin;
 }

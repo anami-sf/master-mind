@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+//import ReactDOM from 'react-dom';
 import './App.css';
+import GameBoard from './components/GameBoard/GameBoard'
+import ColorPicker from './components/ColorPicker'
+import GameTimer from './components/GameTimer'
+import NewGameButton from './components/NewGameButton'
+import Footer from './components/Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      selColorIdx: 0
+    }
+  }
+
+  render() {
+    return (
+      <div className="App" >
+        selected color: {this.state.selColorIdx}
+        <header className="App-header">React Mastermind</header>
+        <GameBoard />
+        <ColorPicker />
+        <GameTimer />
+        <NewGameButton />
+        <Footer />    
+      </div>
+    )
+  }
+
 }
 
 export default App;
